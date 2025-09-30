@@ -16,6 +16,7 @@ print(f"Car model: {car_subaru.model}, color: {car_subaru.color}")
 car_honda.drive_to_location("Karakol")
 
 print(type)
+print("hello world")
 
 
 
