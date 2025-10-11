@@ -1,31 +1,17 @@
-# #создание объектов
-# car_honda = Car(model='Honda', color='White')
-# car_subaru = Car(model='subaru', color='red')
-#
-# print(car_honda)
-# print(f"Car model: {car_honda.model}, color: {car_honda.color}")
-# print(car_subaru)
-# print(f"Car model: {car_subaru.model}, color: {car_subaru.color}")
-#
-# car_honda.drive_to_location("Karakol")
-
-
 class Person:
-    def __init__(self, name, birth_date, who, job, age):
+    def __init__(self, name, birth_date, who, job):
         self.name = name
         self.birth_date = birth_date
         self.who = who
         self.job = job
-        self.age = age
 
     def introduce(self):
-        print(f"Привет меня зовут {self.name}, родился {self.birth_date}, мне {self.age}. Я {self.who}, работаю {self.job}.")
+        print(f"Привет меня зовут {self.name}. Я {self.who}, родился {self.birth_date}, работаю {self.job}.")
 
 class Classmate(Person):
-    def __init__(self, name, birth_date, who,  job, hobby ):
-         super().__init__(name, birth_date, who, job, age)
+    def __init__(self, name, birth_date, who,  job, hobby):
+         super().__init__(name, birth_date, who, job)
          self.hobby = hobby
-
 
 
     def introduce(self):
@@ -47,7 +33,6 @@ friend = Friend(name="Jeri",  birth_date="1.09.2005", who="знакомый То
 
 classmate.introduce()
 friend.introduce()
-
 
 
 
