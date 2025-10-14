@@ -4,7 +4,6 @@
 # абстакный нечего
 # дочерный = реализация и происходит
 
-from abc import ABC, abstractmethod
 
 class Animal(ABC):
     @abstractmethod
