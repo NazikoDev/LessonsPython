@@ -1,6 +1,6 @@
 class User:
   #переменные класса
-   total _users = 0
+   total_users = 0
 
    def __init__(self, name, email):
       self.name = name
@@ -32,11 +32,14 @@ user_1 = User("nazik", "nazik@gmail.com")
 user_2 = User("gulnazik", "gulnazik@gmail.com")
 print(f"{User.total_users=}")
 user_1.test()
-print(User.get_total_uers())
+print(User.get_total_user())
 print(user_1.total_users)
 
-usr = User.create_user(name="nazik", email="n")
-print(f"{usr=}")
+try:
+   usr = User.create_user(name="nazik", email="n")
+except ValueError as e:
+   print("Ошибка:", e)
+
 
 print(User.validate_email("mail@mail.com"))
 
